@@ -2,17 +2,17 @@
    Layout: faixas horizontais de ponta a ponta, alternando fundo claro, fundo tingido e uma faixa escura (sigilo);
    o produto aparece como tela real (painel do RH e celular), em linhas alternadas texto/tela; conteúdo até 1240px. */
 :root{
-  --bg:#F5F7FB;
+  --bg:#F4F8F8;
   --surface:#FFFFFF;
-  --tint:#EAF0F9;
-  --ink:#131A2C;
-  --muted:#556079;
-  --line:#DCE2EC;
-  --brand:#1F3B78;
+  --tint:#E5F0EF;
+  --ink:#0B2530;
+  --muted:#6C7D86;
+  --line:#E0E8EA;
+  --brand:#0F5C6B;
   --brand-ink:#FFFFFF;
-  --brand-soft:#E2E9F6;
-  --sun:#D2702A;
-  --sun-soft:#FBE9DA;
+  --brand-soft:#E2EFF0;
+  --sun:#0F5C6B;
+  --sun-soft:#E2EFF0;
   --good:#2C7A57;
   --good-soft:#E0F1E7;
   --warn:#946010;
@@ -26,15 +26,15 @@
   --night-line:rgba(255,255,255,.13);
   --shadow:0 1px 2px rgba(19,26,44,.06),0 12px 32px -12px rgba(19,26,44,.22);
   --shadow-lg:0 2px 4px rgba(19,26,44,.05),0 30px 60px -20px rgba(19,26,44,.35);
-  --font-display:"Bricolage Grotesque","Segoe UI",system-ui,-apple-system,sans-serif;
-  --font-body:"Figtree","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
+  --font-display:"Plus Jakarta Sans","Segoe UI",system-ui,-apple-system,sans-serif;
+  --font-body:"Inter","Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
   --radius:16px;
   --wrap:1240px;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#0D1220;--surface:#151C2E;--tint:#121A2C;--ink:#E8ECF6;--muted:#A0A9C0;--line:#273049;
-    --brand:#9FB6F3;--brand-ink:#0D1220;--brand-soft:#1B2643;--sun:#F0A062;--sun-soft:#33251A;
+    --bg:#081A21;--surface:#0E2730;--tint:#0F2B33;--ink:#EAF2F3;--muted:#8DA0A7;--line:#1E3A44;
+    --brand:#6CC3C9;--brand-ink:#06191F;--brand-soft:#123640;--sun:#6CC3C9;--sun-soft:#123640;
     --good:#6CC59A;--good-soft:#152E28;--warn:#E2B357;--warn-soft:#332818;--crit:#EE8A80;--crit-soft:#391D1C;
     --night:#080C16;--night-2:#111A2C;--night-ink:#EAEEF7;--night-muted:#A7B1C8;--night-line:rgba(255,255,255,.12);
     --shadow:0 1px 2px rgba(0,0,0,.3),0 12px 32px -12px rgba(0,0,0,.6);
@@ -43,8 +43,8 @@
   }
 }
 :root[data-theme="dark"]{
-  --bg:#0D1220;--surface:#151C2E;--tint:#121A2C;--ink:#E8ECF6;--muted:#A0A9C0;--line:#273049;
-  --brand:#9FB6F3;--brand-ink:#0D1220;--brand-soft:#1B2643;--sun:#F0A062;--sun-soft:#33251A;
+  --bg:#081A21;--surface:#0E2730;--tint:#0F2B33;--ink:#EAF2F3;--muted:#8DA0A7;--line:#1E3A44;
+  --brand:#6CC3C9;--brand-ink:#06191F;--brand-soft:#123640;--sun:#6CC3C9;--sun-soft:#123640;
   --good:#6CC59A;--good-soft:#152E28;--warn:#E2B357;--warn-soft:#332818;--crit:#EE8A80;--crit-soft:#391D1C;
   --night:#080C16;--night-2:#111A2C;--night-ink:#EAEEF7;--night-muted:#A7B1C8;--night-line:rgba(255,255,255,.12);
   --shadow:0 1px 2px rgba(0,0,0,.3),0 12px 32px -12px rgba(0,0,0,.6);
