@@ -525,3 +525,38 @@ body{background:var(--mint)}
 .sec.teal .steps li::before{color:#8EDBDC}
 .sec.teal .steps .when{color:#FFFFFF}
 .sec.teal .steps p{color:#CFE3E6}
+
+/* ---------- faixa de aviso, checklist NR-1 e WhatsApp (11/11/2026, depois de comparar com as concorrentes) ---------- */
+.topbar{display:block;text-align:center;text-decoration:none;background:var(--amber);color:#2A1A04;font-size:.875rem;font-weight:600;line-height:1.4;padding:10px max(20px,env(safe-area-inset-right,0px)) 10px max(20px,env(safe-area-inset-left,0px))}
+.topbar span{text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+.topbar:hover span{text-decoration-thickness:2px}
+
+.now .check-card{grid-column:1/-1}
+.check-card{margin-top:clamp(36px,5vw,56px);background:var(--card);border-radius:26px;box-shadow:var(--shadow);padding:clamp(22px,3vw,40px);display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(24px,3.5vw,48px);align-items:start}
+.check-q{display:grid;min-width:0}
+.check-title{font-size:clamp(1.4rem,2.4vw,1.9rem);margin:10px 0 6px}
+.check-sub{color:var(--muted);margin-bottom:14px}
+.cq{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px;align-items:center;padding:13px 0;border-top:1px solid var(--line)}
+.cq p{font-size:.9688rem;color:var(--ink);line-height:1.45}
+.cq small{display:block;margin-top:3px;color:var(--muted);font-size:.75rem}
+.yn{display:inline-flex;gap:2px;padding:3px;border:1px solid var(--line);border-radius:999px;background:var(--bg)}
+.yn input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.yn label{min-width:52px;text-align:center;padding:7px 12px;border-radius:999px;font-size:.8125rem;font-weight:600;color:var(--muted);cursor:pointer;user-select:none}
+.yn input:checked+label{background:var(--brand);color:var(--brand-ink)}
+.yn input[value="0"]:checked+label{background:var(--crit-soft);color:var(--crit)}
+.yn input:focus-visible+label{outline:3px solid var(--amber);outline-offset:2px}
+.check-res{position:sticky;top:100px;display:grid;gap:14px;align-content:start;padding:26px;border-radius:20px;background:var(--mint)}
+.check-res .score{font:650 1.1rem/1 var(--f-head);color:var(--muted)}
+.check-res .score b{font-size:3.2rem;letter-spacing:-.04em;color:var(--ink);margin-right:6px}
+.ck-txt{color:var(--text);font-size:.9688rem}
+.check-res ul{margin:0;padding-left:18px;display:grid;gap:7px;font-size:.9063rem;color:var(--text)}
+.check-res .btn{width:100%}
+@media (max-width:900px){.check-card{grid-template-columns:1fr}.check-res{position:static}}
+@media (max-width:480px){.cq{grid-template-columns:1fr;gap:8px}}
+
+.wa-float{position:fixed;z-index:45;right:max(20px,env(safe-area-inset-right,0px));bottom:max(20px,env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#1FAF57;color:#fff;box-shadow:0 12px 28px -8px rgba(0,0,0,.4);text-decoration:none}
+.wa-float svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.wa-float:hover{transform:translateY(-2px)}
+@media (prefers-reduced-motion: reduce){.wa-float:hover{transform:none}}
+/* atalhos (#planos, #checklist...) param abaixo do menu fixo */
+section[id],.check-card{scroll-margin-top:92px}

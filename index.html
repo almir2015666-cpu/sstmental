@@ -43,6 +43,8 @@
   <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3.5l2 5L8 10.5a11 11 0 0 0 5.5 5.5L15 13.5l5 2V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
 </svg>
 
+<a class="topbar" href="#checklist">As multas da NR-1 psicossocial estão suspensas pelo STF, mas a obrigação já vale. <span>Veja em 1 minuto se a sua empresa está em dia</span></a>
+
 <header class="nav" id="nav">
   <div class="nav-in">
     <a class="brand" href="#inicio" aria-label="Alentta, início"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="var(--brand)"/><path d="M8 20.5a8 8 0 0 1 16 0z" fill="var(--brand-ink)"/><rect x="7" y="22.6" width="18" height="2" rx="1" fill="var(--brand-ink)" fill-opacity=".55"/></svg>alentta</a>
@@ -130,6 +132,29 @@
       <div class="stat"><b>546 mil</b><p>afastamentos por transtornos mentais no INSS em 2025</p><cite>INSS, 2025</cite></div>
       <div class="stat"><b>+16%</b><p>em um ano, em relação a 2024</p><cite>INSS, 2024 e 2025</cite></div>
       <div class="stat"><b>15 dias</b><p>de cada afastamento são pagos pela empresa</p><cite>Lei 8.213/91, art. 60</cite></div>
+    </div>
+    <div class="check-card" id="checklist">
+      <div class="check-q">
+        <span class="label">Teste em 1 minuto</span>
+        <h3 class="check-title">Sua empresa já está em dia com a NR-1?</h3>
+        <p class="check-sub">Responda com sinceridade. Nada sai do seu navegador.</p>
+        <div class="cq"><p>Os riscos psicossociais (sobrecarga, metas, assédio, jornada) estão no inventário do PGR ou na AEP?<small>NR-1, item 1.5.7.3.2</small></p><span class="yn" role="radiogroup" aria-label="Riscos no inventário"><input type="radio" name="q1" id="q1s" value="1"><label for="q1s">Sim</label><input type="radio" name="q1" id="q1n" value="0"><label for="q1n">Não</label></span></div>
+        <div class="cq"><p>Os trabalhadores foram consultados sobre esses riscos, por questionário, conversa ou CIPA?<small>NR-1, item 1.5.3.3</small></p><span class="yn" role="radiogroup" aria-label="Trabalhadores consultados"><input type="radio" name="q2" id="q2s" value="1"><label for="q2s">Sim</label><input type="radio" name="q2" id="q2n" value="0"><label for="q2n">Não</label></span></div>
+        <div class="cq"><p>O jeito de medir gravidade e probabilidade de cada risco está escrito?<small>NR-1, item 1.5.4.4.2.2</small></p><span class="yn" role="radiogroup" aria-label="Critérios escritos"><input type="radio" name="q3" id="q3s" value="1"><label for="q3s">Sim</label><input type="radio" name="q3" id="q3n" value="0"><label for="q3n">Não</label></span></div>
+        <div class="cq"><p>Existe plano de ação com responsável e prazo para cada risco encontrado?<small>NR-1, item 1.5.5.2</small></p><span class="yn" role="radiogroup" aria-label="Plano de ação"><input type="radio" name="q4" id="q4s" value="1"><label for="q4s">Sim</label><input type="radio" name="q4" id="q4n" value="0"><label for="q4n">Não</label></span></div>
+        <div class="cq"><p>O resultado e o plano foram comunicados aos trabalhadores?<small>NR-1, item 1.5.3.3</small></p><span class="yn" role="radiogroup" aria-label="Resultado comunicado"><input type="radio" name="q5" id="q5s" value="1"><label for="q5s">Sim</label><input type="radio" name="q5" id="q5n" value="0"><label for="q5n">Não</label></span></div>
+        <div class="cq"><p>Há registro do que já foi feito: atas, listas de presença, evidências?<small>Histórico guardado por 20 anos, item 1.5.7.3.3.1</small></p><span class="yn" role="radiogroup" aria-label="Registros guardados"><input type="radio" name="q6" id="q6s" value="1"><label for="q6s">Sim</label><input type="radio" name="q6" id="q6n" value="0"><label for="q6n">Não</label></span></div>
+        <div class="cq"><p>A empresa tem um canal para relatar assédio e conflito sem se identificar?<small>Boa prática e exigência para empresas com CIPA</small></p><span class="yn" role="radiogroup" aria-label="Canal de relato"><input type="radio" name="q7" id="q7s" value="1"><label for="q7s">Sim</label><input type="radio" name="q7" id="q7n" value="0"><label for="q7n">Não</label></span></div>
+        <div class="cq"><p>Quem está adoecendo tem a quem recorrer: psicólogo, acolhimento ou encaminhamento?<small>Boa prática; reduz afastamentos</small></p><span class="yn" role="radiogroup" aria-label="Caminho de ajuda"><input type="radio" name="q8" id="q8s" value="1"><label for="q8s">Sim</label><input type="radio" name="q8" id="q8n" value="0"><label for="q8n">Não</label></span></div>
+      </div>
+      <aside class="check-res" aria-live="polite">
+        <span class="label">Seu resultado</span>
+        <p class="score"><b id="ck-sim">0</b> de 8</p>
+        <div class="meter"><i id="ck-bar" style="width:0%"></i></div>
+        <p id="ck-txt" class="ck-txt">Responda às perguntas ao lado para ver o que falta.</p>
+        <ul id="ck-falta" hidden></ul>
+        <a class="btn" href="#contato" id="ck-cta" data-plano="NR-1 + Cuidado">Quero ajuda para fechar o que falta</a>
+      </aside>
     </div>
   </div>
 </section>
@@ -527,6 +552,7 @@
         <h4>Plataforma</h4>
         <ul>
           <li><a href="#plataforma">As três telas</a></li>
+          <li><a href="#checklist">Checklist NR-1</a></li>
           <li><a href="#como-funciona">Como funciona</a></li>
           <li><a href="#sigilo">Sigilo e LGPD</a></li>
           <li><a href="demo.html">Demonstração</a></li>
@@ -596,6 +622,49 @@
       n.focus(); abrirAba(n);
     });
   });
+
+  /* checklist NR-1: conta os "sim" e lista o que falta, sem enviar nada */
+  var FALTA = {
+    q1: 'Colocar os riscos psicossociais no inventário do PGR ou na AEP',
+    q2: 'Consultar os trabalhadores sobre os riscos',
+    q3: 'Escrever o critério de gravidade e probabilidade',
+    q4: 'Montar o plano de ação com responsável e prazo',
+    q5: 'Comunicar o resultado e o plano à equipe',
+    q6: 'Guardar registros e evidências do que foi feito',
+    q7: 'Abrir um canal anônimo de relato',
+    q8: 'Oferecer acolhimento psicológico a quem precisa'
+  };
+  function checar(){
+    var sim = 0, resp = 0, falta = [];
+    Object.keys(FALTA).forEach(function(q){
+      var m = document.querySelector('input[name="' + q + '"]:checked');
+      if (!m) return;
+      resp++;
+      if (m.value === '1') sim++; else falta.push(FALTA[q]);
+    });
+    document.getElementById('ck-sim').textContent = sim;
+    document.getElementById('ck-bar').style.width = (sim / 8 * 100) + '%';
+    var txt = document.getElementById('ck-txt'), ul = document.getElementById('ck-falta');
+    if (resp < 8) txt.textContent = 'Faltam ' + (8 - resp) + ' perguntas para ver o resultado completo.';
+    else if (sim === 8) txt.textContent = 'Sua empresa está em dia. A Alentta ajuda a manter o ciclo vivo e a atender quem precisa.';
+    else if (sim >= 5) txt.textContent = 'Bom começo, mas ainda há pontos que a fiscalização vai pedir:';
+    else txt.textContent = 'Atenção: a maior parte do que a NR-1 pede ainda não está feita. Comece por:';
+    ul.innerHTML = '';
+    falta.forEach(function(f){ var li = document.createElement('li'); li.textContent = f; ul.appendChild(li); });
+    ul.hidden = falta.length === 0;
+  }
+  document.querySelectorAll('.cq input').forEach(function(i){ i.addEventListener('change', checar); });
+
+  /* botão flutuante de WhatsApp: só aparece quando o número estiver em CONTATO */
+  if (CONTATO.whatsapp) {
+    var wa = document.createElement('a');
+    wa.className = 'wa-float';
+    wa.href = 'https://wa.me/' + CONTATO.whatsapp + '?text=' + encodeURIComponent('Olá! Quero conhecer a Alentta.');
+    wa.target = '_blank'; wa.rel = 'noopener';
+    wa.setAttribute('aria-label', 'Falar com a Alentta no WhatsApp');
+    wa.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3.5 20l1.2-3.8A8.5 8.5 0 1 1 20 11.5z"/><path d="M9 9.5c.3 1.7 2.2 3.8 4.3 4.5l1.3-1.1 1.9.9c-.2 1-1.2 1.7-2.2 1.6-3-.3-6.2-3.5-6.4-6.5-.1-1 .6-1.9 1.6-2.1l.9 1.9z"/></svg>';
+    document.body.appendChild(wa);
+  }
 
   /* simulador */
   var n = document.getElementById('calc-n');
