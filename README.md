@@ -17,6 +17,15 @@ Uma empresa da **Eloá Group** (mesmo grupo da Eloá e da NutriObjetivo).
 
 Para ver: abrir `index.html` no navegador. Não tem build.
 
+## No ar
+
+- Endereço: https://almir2015666-cpu.github.io/alentta/ (GitHub Pages, repositório público `almir2015666-cpu/alentta`).
+- **Publicar = `git push`** no ramo `main`. O GitHub atualiza o site em 1 a 2 minutos.
+- Commits com o e-mail privado do GitHub (`...@users.noreply.github.com`), porque o repositório é público.
+- O site está **fora do Google** (`<meta name="robots" content="noindex">` no `index.html`) enquanto o nome e o domínio são provisórios. Tirar essa linha quando estiverem definidos.
+- **Formulário de contato:** preencher `CONTATO` no começo do script do `index.html` (WhatsApp com DDI, por exemplo `5571999999999`, e/ou e-mail). Sem isso, ele avisa que ainda não envia.
+- Domínio próprio: quando houver, criar o arquivo `CNAME` com o domínio e apontar o DNS para o GitHub Pages.
+
 ## Fotos
 
 Fotos do Pexels (licença livre para uso comercial, sem atribuição obrigatória), otimizadas em `img/`:
