@@ -233,6 +233,10 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .act small{color:var(--muted);font-size:.6875rem}
 .act .chip{grid-row:span 2;align-self:center}
 @media (max-width:760px){.app{grid-template-columns:1fr}.app-side{display:none}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.panel-grid{grid-template-columns:1fr}}
+/* No celular o mapa de calor rola de lado dentro do cartão, em vez de espremer os nomes das colunas. */
+@media (max-width:620px){.card:has(.heat){overflow-x:auto}.card .heat{min-width:470px}}
+.calc .calc-out b{white-space:nowrap}
+@media (max-width:620px){.calc .calc-out{gap:22px}.calc .calc-out b{font-size:1.3rem}}
 
 /* celulares (colaborador) */
 .phones{display:flex;justify-content:center;align-items:flex-start;gap:clamp(16px,3vw,36px);padding:12px 0}

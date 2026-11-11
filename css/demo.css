@@ -7,7 +7,7 @@
 .tab[aria-selected="true"]{background:var(--brand);color:var(--brand-ink)}
 .back{font-size:.9375rem;color:var(--muted);text-decoration:none}
 .back:hover{color:var(--ink)}
-@media (max-width:760px){.tabs{margin-left:0;width:100%}.tab{flex:1;padding:8px}}
+@media (max-width:760px){.tabs{margin-left:0;width:100%}.tab{flex:1;padding:8px}.demo-top{position:static}}
 
 .screen{padding-block:28px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .screen-in{max-width:1680px;margin-inline:auto;min-width:0}

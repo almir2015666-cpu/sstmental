@@ -6,6 +6,15 @@
 <title>Alentta</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Avaliação psicossocial da NR-1, psicólogos por vídeo e um painel para o RH acompanhar tudo, sem nunca ver respostas individuais.">
+<!-- Fora do Google enquanto o nome e o domínio são provisórios. Tirar esta linha quando estiverem definidos. -->
+<meta name="robots" content="noindex">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Alentta · Saúde mental no trabalho e NR-1">
+<meta property="og:description" content="Avaliação psicossocial anônima, psicólogos por vídeo e um painel para o RH, sem nunca ver respostas individuais.">
+<meta property="og:image" content="https://almir2015666-cpu.github.io/alentta/img/equipe-sorrindo.jpg">
+<meta property="og:url" content="https://almir2015666-cpu.github.io/alentta/">
+<meta property="og:locale" content="pt_BR">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap">
@@ -548,6 +557,9 @@
 
 <script>
 (function(){
+  /* Contato comercial: preencher quando o dono passar o número e o e-mail. Sem eles, o formulário avisa que ainda não envia. */
+  var CONTATO = { whatsapp: '', whatsappVisivel: '', email: '' };
+
   /* menu do celular */
   var btn = document.getElementById('menu-btn'), menu = document.getElementById('mobile-menu');
   btn.addEventListener('click', function(){
@@ -613,7 +625,22 @@
       return;
     }
     msg.style.background = ''; msg.style.color = '';
-    msg.textContent = 'Pedido registrado nesta prévia. Na versão no ar, ele chega à equipe e a resposta sai em 1 dia útil.';
+    var d = function(id){ return document.getElementById(id).value.trim(); };
+    var linhas = ['Olá! Quero conhecer a Alentta.', 'Nome: ' + d('f-nome'), 'Empresa: ' + d('f-empresa'), 'E-mail: ' + d('f-email'),
+      'WhatsApp: ' + d('f-tel'), 'Colaboradores: ' + d('f-n'), 'Interesse: ' + sel.value];
+    if (d('f-msg')) linhas.push('Mensagem: ' + d('f-msg'));
+    var texto = linhas.join(String.fromCharCode(10));
+    if (CONTATO.whatsapp) {
+      window.location.href = 'https://wa.me/' + CONTATO.whatsapp + '?text=' + encodeURIComponent(texto);
+      msg.textContent = 'Abrindo o WhatsApp com a sua mensagem pronta. Se não abrir, chame no ' + CONTATO.whatsappVisivel + '.';
+      return;
+    }
+    if (CONTATO.email) {
+      window.location.href = 'mailto:' + CONTATO.email + '?subject=' + encodeURIComponent('Apresentação Alentta - ' + d('f-empresa')) + '&body=' + encodeURIComponent(texto);
+      msg.textContent = 'Abrindo o seu e-mail com a mensagem pronta para ' + CONTATO.email + '.';
+      return;
+    }
+    msg.textContent = 'Obrigado! O atendimento comercial está sendo aberto e este formulário passa a enviar nos próximos dias.';
   });
 })();
 </script>
