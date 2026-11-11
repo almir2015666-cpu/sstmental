@@ -25,7 +25,7 @@ Para ver: abrir `index.html` no navegador. Não tem build.
 - O site está **fora do Google** (`<meta name="robots" content="noindex">` no `index.html`) até o domínio `sstmental.com.br` (livre em 11/11/2026) estar registrado e apontado para cá. Tirar essa linha nessa hora.
 - **Formulário de contato:** preencher `CONTATO` no começo do script do `index.html` (WhatsApp com DDI, por exemplo `5571999999999`, e/ou e-mail). Sem isso, ele avisa que ainda não envia.
 - Domínio próprio: registrar `sstmental.com.br` no registro.br, criar o arquivo `CNAME` com o domínio e apontar o DNS para o GitHub Pages.
-- Nome: **SST Mental** (escolhido em 11/11/2026; antes era o provisório "Alentta"). Logo = escudo (segurança do trabalho) com ψ (psicologia); "SST" em negrito e "Mental" em peso 500 (`.wm-l`).
+- Nome: **SST Mental** (escolhido em 11/11/2026; antes era o provisório "Alentta"). Logo = "Pessoa acolhida" (escolhida em 11/11/2026): círculo na cor da marca, pessoa em `--brand-ink` e arco âmbar (`--accent`, reserva #E3A13B) envolvendo, como mãos que amparam. "SST" em negrito e "Mental" em peso 500 (`.wm-l`).
 
 ## Fotos
 
