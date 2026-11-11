@@ -498,3 +498,30 @@ body::before{background:var(--deep)}
 .group-sign{color:#FFFFFF}
 .group-label{color:#9FBBC1}
 .group-sep{background:rgba(255,255,255,.3)}
+
+/* SEM FUNDO BRANCO (11/11/2026): o dono pediu cor também na "parte branca".
+   As seções alternam dois tons de menta; branco só nos cartões. "Como funciona" vira faixa na cor da marca. */
+:root{--mint-2:#D8ECE8}
+body{background:var(--mint)}
+.sec.mint2{background:var(--mint-2)}
+.sec.mint2 .vi{background:var(--card)}
+.sec.mint2 .label{color:var(--brand)}
+.pillar{background:var(--card);box-shadow:var(--shadow-sm)}
+.promise div{background:var(--card)}
+.calc{background:var(--card);border-color:transparent;box-shadow:var(--shadow-sm)}
+.plan{box-shadow:var(--shadow-sm)}
+.stage{background:linear-gradient(155deg,var(--mint-2),#EEF6F4)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .stage{background:linear-gradient(155deg,var(--mint-2),var(--bg-soft))}}
+:root[data-theme="dark"] .stage{background:linear-gradient(155deg,var(--mint-2),var(--bg-soft))}
+
+/* faixa na cor da marca */
+.sec.teal{color:#CFE3E6;background:
+  radial-gradient(700px 380px at 100% 0%,rgba(142,219,220,.18),transparent 60%),
+  linear-gradient(160deg,#0F5C6B,#0B4A56)}
+.sec.teal h2,.sec.teal h3{color:#FFFFFF}
+.sec.teal h2 em{color:#8EDBDC}
+.sec.teal .label{color:var(--amber)}
+.sec.teal .steps li{border-top-color:rgba(255,255,255,.22)}
+.sec.teal .steps li::before{color:#8EDBDC}
+.sec.teal .steps .when{color:#FFFFFF}
+.sec.teal .steps p{color:#CFE3E6}
