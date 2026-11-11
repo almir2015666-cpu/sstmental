@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alentta</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Avaliação de riscos psicossociais da NR-1, relatório assinado para o PGR e psicólogo por vídeo para quem precisa. O RH acompanha tudo num painel, sem ver respostas individuais.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4.5 4.5"/></symbol>
+  <symbol id="i-bars" viewBox="0 0 24 24"><path d="M4 20h16M7 16v-5M12 16V6M17 16v-8"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.4-5.7M20 4v5h-5"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5 21.5 20h-19z"/><path d="M12 10v4.5M12 17.3v.2"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="m7 15 3-4 3 2 4-5"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="1.5"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="1.5"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="1.5"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11"/><path d="m3.5 6 1.2 1.2L7 5M3.5 12l1.2 1.2L7 11M3.5 18l1.2 1.2L7 17"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.4 3.4-5.5 6.5-5.5s5.7 2.1 6.5 5.5M16 4.7a3.5 3.5 0 0 1 0 6.6M18.2 14.8c1.7.8 2.9 2.5 3.3 5.2"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24"><rect x="2.5" y="6" width="13.5" height="12" rx="2.5"/><path d="m16 10.5 5.5-3.5v10L16 13.5"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4.5" y="10.5" width="15" height="10.5" rx="2.5"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M8 12h8M8 16h8M8 8h3"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 19.5 6v5.8c0 4.4-3.1 7.9-7.5 9.2-4.4-1.3-7.5-4.8-7.5-9.2V6z"/><path d="m8.8 12 2.2 2.2 4.4-4.4"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M12 3 19.5 6v5.8c0 4.4-3.1 7.9-7.5 9.2-4.4-1.3-7.5-4.8-7.5-9.2V6z"/><path d="m9.5 9.5 5 5M14.5 9.5l-5 5"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5"/></symbol>
+  <symbol id="i-lifeline" viewBox="0 0 24 24"><path d="M5 4h3.5l2 5L8 10.5a11 11 0 0 0 5.5 5.5L15 13.5l5 2V19a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="Alentta, início"><span class="logo-mark" aria-hidden="true"></span>alentta</a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="#nr1">A NR-1</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#plataforma">Plataforma</a>
+      <a href="#sigilo">Sigilo</a>
+      <a href="#planos">Planos</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn ghost" href="demo.html">Ver demonstração</a>
+      <a class="btn" href="#contato">Agendar apresentação</a>
+    </div>
+    <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu"><svg class="ico"><use href="#i-menu"/></svg></button>
+  </div>
+  <nav class="wrap mobile-menu" id="mobile-menu" aria-label="Menu" hidden>
+    <a href="#nr1">A NR-1</a>
+    <a href="#como-funciona">Como funciona</a>
+    <a href="#plataforma">Plataforma</a>
+    <a href="#sigilo">Sigilo</a>
+    <a href="#planos">Planos</a>
+    <a href="#duvidas">Dúvidas</a>
+    <a href="demo.html">Ver demonstração</a>
+    <a href="#contato">Agendar apresentação</a>
+  </nav>
+</header>
+
+<main id="inicio">
+
+<!-- ABERTURA -->
+<section class="band hero" aria-labelledby="hero-title">
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="eyebrow">Saúde mental no trabalho · NR-1</span>
+      <h1 id="hero-title">Saúde mental no trabalho, <em>do jeito que a NR-1 pede.</em></h1>
+      <p class="lead">Avaliação psicossocial anônima, relatório assinado por psicólogo para o PGR e atendimento por vídeo para quem precisa. O RH acompanha tudo num painel, sem nunca ver respostas individuais.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#contato">Agendar apresentação <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="btn ghost" href="demo.html">Ver demonstração</a>
+      </div>
+      <ul class="ticks">
+        <li><svg class="ico"><use href="#i-check"/></svg>Sem instalar aplicativo</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Relatório assinado por psicólogo (CRP)</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Primeira conversa em até 72 h</li>
+      </ul>
+    </div>
+
+    <div class="hero-visual" role="img" aria-label="Painel do RH com o mapa de riscos por setor e, à frente, o questionário no celular do colaborador">
+      <span class="sun" aria-hidden="true"></span>
+      <div class="window" aria-hidden="true">
+        <div class="window-bar"><span class="dots"><i></i><i></i><i></i></span><span class="window-title">Painel do RH · Empresa Exemplo · ciclo 2026</span></div>
+        <div class="window-body">
+          <div class="w-kpis">
+            <div class="w-kpi"><small>Participação</small><b>78%</b></div>
+            <div class="w-kpi"><small>Setores em risco alto</small><b style="color:var(--crit)">2</b></div>
+            <div class="w-kpi"><small>Pessoas atendidas</small><b>17</b></div>
+          </div>
+          <div class="w-label"><span>Mapa de riscos por setor</span><span class="pill info">0 a 100</span></div>
+          <div class="heat">
+            <span></span><span class="h">Ritmo</span><span class="h">Auto&shy;nomia</span><span class="h">Lide&shy;rança</span><span class="h">Res&shy;peito</span><span class="h">Jor&shy;nada</span>
+            <span class="s">Atendimento</span><span class="c hi">72</span><span class="c md">48</span><span class="c md">51</span><span class="c lo">34</span><span class="c hi">66</span>
+            <span class="s">Logística</span><span class="c md">55</span><span class="c lo">31</span><span class="c hi">69</span><span class="c md">44</span><span class="c md">47</span>
+            <span class="s">Produção</span><span class="c md">49</span><span class="c md">57</span><span class="c md">42</span><span class="c lo">21</span><span class="c md">41</span>
+            <span class="s">Comercial</span><span class="c md">58</span><span class="c lo">22</span><span class="c lo">35</span><span class="c lo">18</span><span class="c md">52</span>
+            <span class="s">Diretoria</span><span class="c na">–</span><span class="c na">–</span><span class="c na">–</span><span class="c na">–</span><span class="c na">–</span>
+          </div>
+          <span style="font-size:.6875rem;color:var(--muted)">Diretoria oculta: menos de 5 respostas.</span>
+        </div>
+      </div>
+      <div class="hv-row" aria-hidden="true">
+      <div class="float-card"><span class="fc-ico"><svg class="ico"><use href="#i-shield"/></svg></span><div><b>Relatório técnico assinado</b><small>Psicóloga CRP 03 · pronto para o PGR</small></div></div>
+      <div class="phone">
+        <div class="phone-screen">
+          <div class="phone-top"><span>Questionário</span><span>7 de 24</span></div>
+          <div class="progress" style="--p:29%"><i></i></div>
+          <span class="q-domain">Ritmo de trabalho</span>
+          <p class="q-text">Você precisa trabalhar muito rápido para dar conta?</p>
+          <div class="opts">
+            <span class="opt">Raramente</span>
+            <span class="opt on">Às vezes</span>
+            <span class="opt">Frequentemente</span>
+          </div>
+          <p class="phone-note"><span aria-hidden="true">●</span> Anônimo: a empresa só vê o setor.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NORMAS -->
+<section class="norms" aria-label="Normas atendidas">
+  <div class="wrap">
+    <span class="norms-label">Feito de acordo com</span>
+    <ul>
+      <li><b>NR-1</b><span>Portaria MTE 1.419/2024</span></li>
+      <li><b>LGPD</b><span>Lei 13.709/2018</span></li>
+      <li><b>Telessaúde</b><span>Lei 14.510/2022</span></li>
+      <li><b>CFP</b><span>Resoluções 9/2024 e 14/2023</span></li>
+      <li><b>Instrumento validado</b><span>no Brasil</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- POR QUE AGORA -->
+<section class="band" aria-labelledby="agora-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Por que agora</span>
+      <h2 id="agora-title">O adoecimento mental no trabalho cresce, e a norma passou a cobrar prevenção</h2>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>546<small>mil</small></b><p>afastamentos pelo INSS por transtornos mentais em 2025</p><cite>INSS, 2025</cite></div>
+      <div class="stat"><b>+16%</b><p>de afastamentos por transtornos mentais em relação a 2024</p><cite>INSS, 2024 e 2025</cite></div>
+      <div class="stat"><b>26/05</b><p>de 2026: início da vigência dos riscos psicossociais na NR-1</p><cite>Portaria MTE 765/2025</cite></div>
+      <div class="stat"><b>20<small>anos</small></b><p>de guarda do histórico do inventário de riscos</p><cite>NR-1, item 1.5.7.3.3.1</cite></div>
+    </div>
+  </div>
+</section>
+
+<!-- NR-1 -->
+<section class="band tint" id="nr1" aria-labelledby="nr-title">
+  <div class="wrap nr-grid">
+    <div style="display:grid;gap:18px;min-width:0">
+      <span class="eyebrow">O que a norma pede</span>
+      <h2 id="nr-title" style="font-size:clamp(1.9rem,3.6vw,2.9rem)">Mapear, avaliar, agir e provar que fez</h2>
+      <p class="lead">A Portaria MTE nº 1.419/2024 colocou os fatores psicossociais no Gerenciamento de Riscos Ocupacionais. Vale também para a pequena empresa dispensada do PGR: nela, a avaliação entra na AEP da NR-17.</p>
+      <p class="lead">Questionário sozinho não basta. O Ministério do Trabalho pede análise, inventário, plano de ação e participação dos trabalhadores. A Alentta entrega tudo isso.</p>
+      <div class="notice"><svg class="ico"><use href="#i-alert"/></svg><p><b>Multas suspensas, obrigação valendo.</b> O STF suspendeu as multas da parte psicossocial em junho de 2026 e prorrogou a suspensão em setembro, enquanto governo e empresas negociam. Ela pode acabar a qualquer momento.</p></div>
+    </div>
+    <ul class="cycle">
+      <li><span class="cycle-ico"><svg class="ico"><use href="#i-search"/></svg></span><h3>Identificar <small>1.5.3.1.4</small></h3><p>Quais fatores do trabalho adoecem: sobrecarga, metas, falta de autonomia, liderança, assédio, jornada.</p></li>
+      <li><span class="cycle-ico"><svg class="ico"><use href="#i-bars"/></svg></span><h3>Avaliar <small>1.5.4.4.2.2</small></h3><p>Probabilidade, gravidade e nível de cada risco por setor, com critérios escritos.</p></li>
+      <li><span class="cycle-ico"><svg class="ico"><use href="#i-target"/></svg></span><h3>Agir <small>1.5.5.2</small></h3><p>Plano de ação com responsável, prazo e forma de acompanhar. Mudar a organização do trabalho.</p></li>
+      <li><span class="cycle-ico"><svg class="ico"><use href="#i-refresh"/></svg></span><h3>Revisar <small>1.5.4.4.6</small></h3><p>A cada 2 anos, ou antes se a organização mudar, houver adoecimento ou pedido da CIPA.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="band white" id="como-funciona" aria-labelledby="como-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">Como funciona</span>
+      <h2 id="como-title">Do convite ao plano de ação em três semanas</h2>
+      <p class="lead">O colaborador recebe um link por WhatsApp ou lê o QR code do mural e responde no celular. Ninguém instala nada.</p>
+    </div>
+    <ol class="timeline">
+      <li><span class="when">Semana 1</span><h3>Convite</h3><p>O RH informa setores e número de pessoas. A Alentta envia os convites e os lembretes. Sem lista de nomes, sem CPF.</p></li>
+      <li><span class="when">8 a 10 minutos</span><h3>Questionário</h3><p>Perguntas sobre o trabalho, anônimas. No fim, uma parte opcional sobre como a pessoa está, que só o psicólogo vê.</p></li>
+      <li><span class="when">Semana 3</span><h3>Relatório e plano</h3><p>Inventário de riscos por setor, plano de ação e relatório técnico assinado, prontos para o PGR.</p></li>
+      <li><span class="when">O ano todo</span><h3>Cuidado</h3><p>Quem precisa conversa com psicólogo por vídeo. Sinal de crise: a equipe liga no mesmo dia.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- PLATAFORMA -->
+<section class="band" id="plataforma" aria-labelledby="plat-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Plataforma</span>
+      <h2 id="plat-title">Uma plataforma, três telas, e cada pessoa vê só o que lhe cabe</h2>
+    </div>
+
+    <div class="feature">
+      <div class="feature-copy">
+        <span class="kicker">Para o RH e o SST</span>
+        <h3>Um painel para provar que a empresa gerencia o risco</h3>
+        <ul class="checks">
+          <li><span class="ci"><svg class="ico"><use href="#i-users"/></svg></span><div><b>Adesão em tempo real</b><span>Por setor, com lembretes automáticos para quem falta responder.</span></div></li>
+          <li><span class="ci"><svg class="ico"><use href="#i-grid"/></svg></span><div><b>Mapa de calor dos fatores de risco</b><span>Só aparecem grupos com 5 ou mais respostas.</span></div></li>
+          <li><span class="ci"><svg class="ico"><use href="#i-list"/></svg></span><div><b>Plano de ação vivo</b><span>Responsável, prazo e situação de cada ação, pronto para o PGR.</span></div></li>
+          <li><span class="ci"><svg class="ico"><use href="#i-chart"/></svg></span><div><b>Indicadores de cuidado sem nomes</b><span>Quantos foram convidados, agendaram e foram atendidos.</span></div></li>
+        </ul>
+      </div>
+      <div class="feature-visual" aria-hidden="true">
+        <div class="window">
+          <div class="window-bar"><span class="dots"><i></i><i></i><i></i></span><span class="window-title">Plano de ação e cuidado</span></div>
+          <div class="window-body">
+            <div class="duo">
+              <div class="plan-mini">
+                <div class="w-label"><span>Plano de ação</span><span>4 de 9 concluídas</span></div>
+                <div class="plan-row"><b style="font-weight:600">Escala nos picos de segunda</b><span>15/12</span><span class="pill warn">Em andamento</span></div>
+                <div class="plan-row"><b style="font-weight:600">Sem mensagens após 19h</b><span>20/11</span><span class="pill good">Concluída</span></div>
+                <div class="plan-row"><b style="font-weight:600">Formação de líderes (8 h)</b><span>31/01</span><span class="pill warn">Em andamento</span></div>
+                <div class="plan-row"><b style="font-weight:600">Rever metas com o time</b><span>05/11</span><span class="pill crit">Atrasada</span></div>
+              </div>
+              <div class="funnel-mini">
+                <div class="w-label"><span>Cuidado</span><span>só totais</span></div>
+                <div class="fm"><span>Convidados</span><i style="width:100%"></i><b>31</b></div>
+                <div class="fm"><span>Agendaram</span><i style="width:74%"></i><b>23</b></div>
+                <div class="fm"><span>Atendidos</span><i style="width:55%"></i><b>17</b></div>
+                <div class="fm"><span>Acompanhamento</span><i style="width:39%"></i><b>12</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature flip">
+      <div class="feature-copy">
+        <span class="kicker">Para o colaborador</span>
+        <h3>Responde em 8 minutos, pelo celular, sem instalar nada</h3>
+        <ul class="checks">
+          <li><span class="ci"><svg class="ico"><use href="#i-phone"/></svg></span><div><b>Link por WhatsApp ou QR code</b><span>Funciona em qualquer celular, pelo navegador.</span></div></li>
+          <li><span class="ci"><svg class="ico"><use href="#i-heart"/></svg></span><div><b>Resultado na hora, só para ele</b><span>E o convite para conversar, se a triagem indicar.</span></div></li>
+          <li><span class="ci"><svg class="ico"><use href="#i-video"/></svg></span><div><b>Agenda a conversa por vídeo</b><span>Gratuita, em horário que ele escolhe, com lembrete.</span></div></li>
+          <li><span class="ci"><svg class="ico"><use href="#i-lifeline"/></svg></span><div><b>Ajuda imediata à vista</b><span>CVV 188 e SAMU 192 em todas as telas sobre saúde.</span></div></li>
+        </ul>
+      </div>
+      <div class="feature-visual" aria-hidden="true">
+        <div class="phone phone-solo">
+          <div class="phone-screen">
+            <div class="phone-top"><span>Seu resultado</span><span class="pill info">Só você vê</span></div>
+            <div class="result-box"><b>Pode ajudar conversar com uma psicóloga.</b><span style="color:var(--muted)">É por vídeo, gratuito, e a empresa não fica sabendo quem agendou.</span></div>
+            <span class="q-domain">Escolha um horário</span>
+            <div class="slot-mini"><span>Qui, 14/11 · 18:30</span><span class="pill good">Livre</span></div>
+            <div class="slot-mini on"><span>Sex, 15/11 · 12:00</span><span class="pill good">Livre</span></div>
+            <div class="slot-mini"><span>Seg, 18/11 · 08:00</span><span class="pill good">Livre</span></div>
+            <p class="phone-note"><span aria-hidden="true">●</span> Precisa de ajuda agora? Ligue 188 (CVV).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-copy">
+        <span class="kicker">Para o psicólogo</span>
+        <h3>Fila por prioridade, com protocolo de crise</h3>
+        <ul class="checks">
+          <li><span class="ci"><svg class="ico"><use href="#i-list"/></svg></span><div><b>A triagem ordena a fila</b><span>Quem tem sinal de crise aparece primeiro, para ligar no mesmo dia.</span></div></li>
+          <li><span class="ci"><svg class="ico"><use href="#i-video"/></svg></span><div><b>Sala de vídeo e prontuário juntos</b><span>Sessões de 50 minutos, registradas e assinadas.</span></div></li>
+          <li><span class="ci"><svg class="ico"><use href="#i-lock"/></svg></span><div><b>Prontuário só do psicólogo</b><span>A empresa não tem acesso. Guardado por 20 anos.</span></div></li>
+          <li><span class="ci"><svg class="ico"><use href="#i-route"/></svg></span><div><b>Encaminhamento à rede</b><span>CAPS, UBS ou plano de saúde, quando o caso pede mais.</span></div></li>
+        </ul>
+      </div>
+      <div class="feature-visual" aria-hidden="true">
+        <div class="window">
+          <div class="window-bar"><span class="dots"><i></i><i></i><i></i></span><span class="window-title">Fila de acolhimento · hoje</span></div>
+          <div class="window-body">
+            <div class="queue-mini">
+              <div class="qm urgent"><div class="mini-row"><b>Ana P. · Atendimento</b><span class="pill crit">Ligar agora</span></div><small>Pergunta de segurança positiva · pediu ligação há 20 min</small></div>
+              <div class="qm"><div class="mini-row"><b>Carlos M. · Logística</b><span class="pill warn">Até 72 h</span></div><small>Triagem indicada · ainda sem horário</small></div>
+              <div class="qm"><div class="mini-row"><b>Juliana R. · Comercial</b><span class="pill good">Hoje 14:00</span></div><small>Primeira sessão por vídeo</small></div>
+              <div class="qm"><div class="mini-row"><b>Rafael S. · Produção</b><span class="pill info">Pedido livre</span></div><small>Pediu conversa sem triagem</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:clamp(40px,5vw,64px);text-align:center"><a class="btn ghost" href="demo.html">Abrir a demonstração das três telas <svg class="ico"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
+
+<!-- ENTREGÁVEIS -->
+<section class="band tint" id="entregaveis" aria-labelledby="entrega-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">O que sua empresa recebe</span>
+      <h2 id="entrega-title">Documentos prontos para o PGR e para a fiscalização</h2>
+      <p class="lead">Tudo fica no painel, com histórico, para mostrar ao auditor fiscal, à CIPA e à consultoria de SST.</p>
+    </div>
+    <div class="deliver">
+      <article class="doc-card"><span class="doc-ico"><svg class="ico"><use href="#i-doc"/></svg></span><div><h3>Relatório técnico psicossocial</h3><p>Metodologia, resultados por setor e conclusões, assinado por psicólogo com CRP.</p><span class="tag">Para o PGR</span></div></article>
+      <article class="doc-card"><span class="doc-ico"><svg class="ico"><use href="#i-doc"/></svg></span><div><h3>Inventário de riscos</h3><p>Perigos, fontes, grupos expostos e nível de risco no formato da NR-1.</p><span class="tag">PGR ou AEP</span></div></article>
+      <article class="doc-card"><span class="doc-ico"><svg class="ico"><use href="#i-doc"/></svg></span><div><h3>Plano de ação</h3><p>Medidas, responsáveis, prazos e forma de acompanhar, atualizado no painel.</p><span class="tag">Item 1.5.5.2</span></div></article>
+      <article class="doc-card"><span class="doc-ico"><svg class="ico"><use href="#i-doc"/></svg></span><div><h3>Registro de participação</h3><p>Convites, lembretes, adesão por setor e devolutiva aos trabalhadores.</p><span class="tag">Item 1.5.3.3</span></div></article>
+      <article class="doc-card"><span class="doc-ico"><svg class="ico"><use href="#i-doc"/></svg></span><div><h3>Indicadores de cuidado</h3><p>Encaminhados, atendidos e tempo até a primeira conversa, sempre somados.</p><span class="tag">Sem nomes</span></div></article>
+      <article class="doc-card"><span class="doc-ico"><svg class="ico"><use href="#i-doc"/></svg></span><div><h3>Canal de escuta</h3><p>Relatos anônimos de assédio e conflito, com fluxo de apuração e registro.</p><span class="tag">Anônimo</span></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- SIGILO -->
+<section class="band privacy" id="sigilo" aria-labelledby="sigilo-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Sigilo</span>
+      <h2 id="sigilo-title">O colaborador só responde com sinceridade se tiver certeza de que o chefe não vai ler</h2>
+      <p class="lead">Por isso a regra é fixa e está no contrato. Saúde mental é dado sensível pela LGPD, e o sigilo do psicólogo é dever do Código de Ética.</p>
+    </div>
+    <div class="privacy-grid">
+      <div class="privacy-col yes">
+        <h3><span class="badge"><svg class="ico"><use href="#i-shield"/></svg></span>O RH vê</h3>
+        <ul>
+          <li><b>Quantos responderam</b>, por setor e no total</li>
+          <li><b>Médias dos fatores de risco</b> de grupos com 5 ou mais respostas</li>
+          <li><b>Quantas pessoas</b> foram convidadas, agendaram e foram atendidas</li>
+          <li><b>Declaração de comparecimento</b>, só com data e horário, se o colaborador decidir entregá-la</li>
+          <li><b>Relatório técnico, inventário</b> e plano de ação</li>
+        </ul>
+      </div>
+      <div class="privacy-col no">
+        <h3><span class="badge"><svg class="ico"><use href="#i-x"/></svg></span>O RH nunca vê</h3>
+        <ul>
+          <li><b>O que cada pessoa respondeu</b>, nem quem respondeu o quê</li>
+          <li><b>Setor com menos de 5 respostas</b>: o dado entra só no total</li>
+          <li><b>Quem está em atendimento</b>, nem quem recusou o convite</li>
+          <li><b>Prontuário, diagnóstico</b> ou o que foi conversado na sessão</li>
+          <li><b>Filtros por idade, sexo ou cargo</b> que permitam identificar alguém</li>
+        </ul>
+      </div>
+    </div>
+    <p class="privacy-foot"><svg class="ico"><use href="#i-alert"/></svg><span>A única exceção é a que a lei e o Código de Ética preveem: risco grave à vida. Nesse caso o psicólogo aciona a pessoa e a rede de emergência, e comunica apenas o estritamente necessário para protegê-la.</span></p>
+  </div>
+</section>
+
+<!-- PLANOS -->
+<section class="band" id="planos" aria-labelledby="planos-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <span class="eyebrow">Planos</span>
+      <h2 id="planos-title">Preço por colaborador, sem taxa de implantação</h2>
+      <p class="lead">Contrato anual com pagamento mensal. Mínimo de 20 colaboradores. Acima de 500, proposta sob medida.</p>
+    </div>
+    <div class="plans">
+      <article class="plan">
+        <h3>Essencial NR-1</h3>
+        <p class="for">Para cumprir a norma com segurança</p>
+        <p class="price"><strong>R$ 3,90</strong><span>por colaborador/mês</span></p>
+        <ul>
+          <li><svg class="ico"><use href="#i-check"/></svg>Questionário psicossocial anual, por link e QR code</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Inventário de riscos e plano de ação</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Relatório técnico assinado por psicólogo</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Painel do RH com adesão e mapa de calor</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Canal anônimo de escuta</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Encontro online com as lideranças</li>
+          <li class="off"><svg class="ico"><use href="#i-check"/></svg>Triagem individual e psicólogo por vídeo</li>
+        </ul>
+        <a class="btn ghost" href="#contato" data-plano="Essencial NR-1">Quero o Essencial</a>
+      </article>
+      <article class="plan featured">
+        <span class="tag">Recomendado</span>
+        <h3>Cuidado</h3>
+        <p class="for">A norma cumprida e as pessoas atendidas</p>
+        <p class="price"><strong>R$ 14,90</strong><span>por colaborador/mês</span></p>
+        <ul>
+          <li><svg class="ico"><use href="#i-check"/></svg>Tudo do Essencial</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Triagem individual confidencial</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Acolhimento por vídeo em até 72 horas</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>1 sessão por colaborador ao ano, somadas na empresa (até 6 por pessoa)</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Protocolo de crise com contato no mesmo dia</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Reavaliação em 6 meses dos setores em risco alto</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Indicadores de cuidado no painel, sem nomes</li>
+        </ul>
+        <a class="btn" href="#contato" data-plano="Cuidado">Quero o Cuidado</a>
+      </article>
+      <article class="plan">
+        <h3>Completo</h3>
+        <p class="for">Um programa contínuo de saúde mental</p>
+        <p class="price"><strong>R$ 24,90</strong><span>por colaborador/mês</span></p>
+        <ul>
+          <li><svg class="ico"><use href="#i-check"/></svg>Tudo do Cuidado</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>2 sessões por colaborador ao ano (até 10 por pessoa)</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Psicólogo também para quem pedir, sem triagem</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Roda de conversa online todo mês</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Relatório trimestral para a diretoria</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Apoio na apuração de casos de assédio</li>
+          <li><svg class="ico"><use href="#i-check"/></svg>Gerente de conta dedicado</li>
+        </ul>
+        <a class="btn ghost" href="#contato" data-plano="Completo">Quero o Completo</a>
+      </article>
+    </div>
+    <div class="extras" aria-label="Serviços avulsos">
+      <div class="extra"><b>Só a avaliação NR-1</b><span>R$ 29 por colaborador, uma vez. Mínimo R$ 990.</span></div>
+      <div class="extra"><b>Sessão além das incluídas</b><span>R$ 140 por sessão de 50 minutos.</span></div>
+      <div class="extra"><b>Palestra ou roda</b><span>R$ 790 online · R$ 1.290 presencial em Salvador.</span></div>
+      <div class="extra"><b>Clínicas e consultorias de SST</b><span>Revenda com 20% sobre o contrato ou marca própria.</span></div>
+    </div>
+    <div class="calc">
+      <label for="calc-n"><span>Quantos colaboradores a sua empresa tem?</span>
+        <span class="calc-n"><output id="calc-out" for="calc-n">80</output><span style="color:var(--muted);font-weight:500">colaboradores</span></span>
+        <input id="calc-n" type="range" min="20" max="500" step="5" value="80">
+      </label>
+      <div class="calc-res" aria-live="polite">
+        <div><small>Essencial NR-1</small><b id="calc-e">R$ 312/mês</b></div>
+        <div class="on"><small>Cuidado</small><b id="calc-c">R$ 1.192/mês</b></div>
+        <div><small>Completo</small><b id="calc-p">R$ 1.992/mês</b></div>
+      </div>
+    </div>
+    <p class="plans-foot">Valores de lançamento para contratos fechados até 31/03/2027. Psicoterapia longa, laudos e perícias não fazem parte dos planos; quando necessário, a equipe encaminha à rede pública ou ao plano de saúde.</p>
+  </div>
+</section>
+
+<!-- DÚVIDAS -->
+<section class="band white" id="duvidas" aria-labelledby="duvidas-title">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Dúvidas</span>
+      <h2 id="duvidas-title">O que as empresas perguntam primeiro</h2>
+    </div>
+    <div class="faq">
+      <details><summary>A Alentta substitui o PGR?</summary><p>Não. Entregamos a parte psicossocial (inventário, plano de ação e relatório técnico) para o responsável pelo seu PGR incluir no documento, ou na AEP, se a empresa for dispensada do PGR. Se a sua empresa já tem consultoria de SST, trabalhamos junto com ela.</p></details>
+      <details><summary>As multas não estão suspensas?</summary><p>Estão, por decisão do STF de junho de 2026, prorrogada em setembro, enquanto governo e empresas negociam. A obrigação de avaliar e agir continua valendo; só as multas foram suspensas. Quem já tiver inventário e plano de ação não precisa correr quando a suspensão acabar.</p></details>
+      <details><summary>Só o questionário já basta?</summary><p>Não. O Ministério do Trabalho diz que questionário sozinho não prova a gestão do risco. Por isso entregamos a análise do psicólogo, o inventário, o plano de ação com responsáveis e o acompanhamento no painel.</p></details>
+      <details><summary>O RH vai saber quem respondeu o quê?</summary><p>Não. O questionário não pede CPF, e o painel só mostra grupos com 5 ou mais respostas. As respostas sobre saúde vão só para o psicólogo da Alentta.</p></details>
+      <details><summary>E se alguém estiver em crise?</summary><p>Quando a triagem indica risco, a pessoa vê na hora os contatos do CVV (188) e do SAMU (192), e a equipe da Alentta liga no mesmo dia. O psicólogo segue o protocolo de crise e aciona a rede de emergência se preciso.</p></details>
+      <details><summary>Quem são os psicólogos?</summary><p>Psicólogos com CRP ativo, conferido automaticamente no cadastro, e experiência em saúde do trabalhador. Atendem por vídeo, na sala da própria plataforma, com prontuário eletrônico.</p></details>
+      <details><summary>Funciona para empresa pequena?</summary><p>Sim. O mínimo é 20 colaboradores. Em setores com menos de 5 pessoas, os resultados entram só no total da empresa para proteger o anonimato.</p></details>
+      <details><summary>Precisa instalar aplicativo?</summary><p>Não. O colaborador responde e entra na consulta pelo navegador do celular. Quem quiser pode adicionar o atalho na tela inicial.</p></details>
+      <details><summary>A sessão com psicólogo é obrigatória?</summary><p>Nunca. O convite é uma oferta. A pessoa decide se agenda, e a empresa não fica sabendo de quem recusou.</p></details>
+      <details><summary>Quanto tempo até ter o relatório?</summary><p>Cerca de três semanas: uma para divulgar, uma para as respostas e uma para a análise e o plano de ação.</p></details>
+      <details><summary>A empresa pode usar o resultado para demitir?</summary><p>Não. O contrato proíbe usar qualquer dado da Alentta para contratar, promover ou demitir, e a lei proíbe dispensa discriminatória. Como o RH nunca recebe dado individual, isso também não seria possível.</p></details>
+      <details><summary>E quem prefere atendimento presencial?</summary><p>A lei garante essa escolha. Em Salvador, o atendimento presencial é feito em consultório parceiro, dentro das mesmas sessões do plano.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CHAMADA + FORMULÁRIO -->
+<section class="band cta" id="contato" aria-labelledby="contato-title">
+  <div class="wrap">
+    <div class="cta-copy">
+      <span class="eyebrow">Proposta</span>
+      <h2 id="contato-title">Agende uma apresentação de 30 minutos</h2>
+      <p>Mostramos o painel com dados de exemplo, tiramos as dúvidas sobre a NR-1 e mandamos a proposta da sua empresa em 1 dia útil.</p>
+      <ul class="cta-list">
+        <li><svg class="ico"><use href="#i-check"/></svg>Sem custo e sem compromisso</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Junto com a sua consultoria de SST, se quiser</li>
+        <li><svg class="ico"><use href="#i-check"/></svg>Proposta por escrito em 1 dia útil</li>
+      </ul>
+    </div>
+    <form class="form" id="form-proposta" novalidate>
+      <h3>Fale com a Alentta</h3>
+      <label for="f-nome">Seu nome<input id="f-nome" name="nome" autocomplete="name" required></label>
+      <label for="f-empresa">Empresa<input id="f-empresa" name="empresa" autocomplete="organization" required></label>
+      <label for="f-email">E-mail de trabalho<input id="f-email" name="email" type="email" autocomplete="email" required></label>
+      <label for="f-tel">WhatsApp<input id="f-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel"></label>
+      <label for="f-n">Colaboradores<input id="f-n" name="colaboradores" type="number" min="1" inputmode="numeric" placeholder="Ex.: 120"></label>
+      <label for="f-plano">Interesse
+        <select id="f-plano" name="plano">
+          <option>Ainda não sei</option>
+          <option>Essencial NR-1</option>
+          <option>Cuidado</option>
+          <option>Completo</option>
+          <option>Só a avaliação NR-1</option>
+          <option>Sou clínica ou consultoria de SST</option>
+        </select>
+      </label>
+      <label class="full" for="f-msg">Mensagem<textarea id="f-msg" name="mensagem" placeholder="Ex.: já temos PGR com a consultoria X e precisamos incluir os riscos psicossociais."></textarea></label>
+      <div class="full"><button class="btn" type="submit">Pedir apresentação <svg class="ico"><use href="#i-arrow"/></svg></button></div>
+      <p class="form-note">Usamos seus dados só para responder a este pedido.</p>
+      <p class="form-msg" id="form-msg" role="status" hidden></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer band" style="padding-block:64px 32px">
+  <div class="wrap">
+    <div class="footer-top">
+      <div style="display:grid;gap:18px;align-content:start;max-width:420px">
+        <a class="logo" href="#inicio"><span class="logo-mark" aria-hidden="true"></span>alentta</a>
+        <p>Saúde mental no trabalho, do questionário da NR-1 ao cuidado de cada pessoa.</p>
+        <p class="crisis"><svg class="ico"><use href="#i-lifeline"/></svg><span>Em sofrimento agora? Ligue <b>188</b> (CVV, 24 horas, gratuito) ou <b>192</b> (SAMU).</span></p>
+      </div>
+      <div>
+        <h4>Plataforma</h4>
+        <ul>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#entregaveis">Entregáveis</a></li>
+          <li><a href="#sigilo">Sigilo e LGPD</a></li>
+          <li><a href="#planos">Planos</a></li>
+          <li><a href="demo.html">Demonstração</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Parceiros</h4>
+        <ul>
+          <li><a href="#contato">Clínicas de SST</a></li>
+          <li><a href="#contato">Consultorias</a></li>
+          <li><a href="#contato">Psicólogos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Referências</h4>
+        <ul>
+          <li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/assuntos/inspecao-do-trabalho/manuais-e-publicacoes/2026/perguntas-e-respostas-gro-pgr-maio-2026" rel="noopener">GRO e PGR: perguntas do MTE</a></li>
+          <li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/guia-nr-01-revisado.pdf" rel="noopener">Guia de riscos psicossociais</a></li>
+          <li><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm" rel="noopener">LGPD</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Alentta</span>
+      <p class="group-sign"><span class="group-label">Uma empresa</span><span class="group-sep" aria-hidden="true"></span><span class="group-wordmark" translate="no">eloá<small>group</small></span></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn = document.getElementById('menu-btn');
+  var menu = document.getElementById('mobile-menu');
+  btn.addEventListener('click', function(){
+    var abrir = menu.hidden;
+    menu.hidden = !abrir;
+    btn.setAttribute('aria-expanded', abrir ? 'true' : 'false');
+    btn.setAttribute('aria-label', abrir ? 'Fechar menu' : 'Abrir menu');
+  });
+  menu.addEventListener('click', function(e){
+    if (e.target.closest('a')) { menu.hidden = true; btn.setAttribute('aria-expanded','false'); }
+  });
+
+  var precos = {essencial:3.90, cuidado:14.90, completo:24.90};
+  var brl = function(v){ return 'R$ ' + Math.round(v).toLocaleString('pt-BR') + '/mês'; };
+  var n = document.getElementById('calc-n');
+  var out = document.getElementById('calc-out');
+  function calcular(){
+    var q = Number(n.value);
+    out.textContent = q;
+    document.getElementById('calc-e').textContent = brl(q * precos.essencial);
+    document.getElementById('calc-c').textContent = brl(q * precos.cuidado);
+    document.getElementById('calc-p').textContent = brl(q * precos.completo);
+  }
+  n.addEventListener('input', calcular);
+  calcular();
+
+  var sel = document.getElementById('f-plano');
+  document.querySelectorAll('[data-plano]').forEach(function(a){
+    a.addEventListener('click', function(){ sel.value = a.getAttribute('data-plano'); });
+  });
+
+  var form = document.getElementById('form-proposta');
+  var msg = document.getElementById('form-msg');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var faltando = ['f-nome','f-empresa','f-email'].filter(function(id){ return !document.getElementById(id).value.trim(); });
+    msg.hidden = false;
+    if (faltando.length){
+      msg.style.background = 'var(--warn-soft)'; msg.style.color = 'var(--warn)';
+      msg.textContent = 'Preencha nome, empresa e e-mail para recebermos o pedido.';
+      document.getElementById(faltando[0]).focus();
+      return;
+    }
+    msg.style.background = ''; msg.style.color = '';
+    msg.textContent = 'Pedido registrado nesta prévia. Na versão no ar, ele chega à equipe comercial e a resposta sai em 1 dia útil.';
+  });
+})();
+</script>
+</body>
+</html>

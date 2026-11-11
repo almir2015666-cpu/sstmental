@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alentta · Demonstração</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/demo.css">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}</style>
+</head>
+<body>
+
+<header class="demo-top">
+  <div class="demo-top-in">
+    <a class="logo" href="index.html" aria-label="Voltar ao site da Alentta"><span class="logo-mark" aria-hidden="true"></span>alentta</a>
+    <span class="demo-badge">Demonstração · dados de exemplo</span>
+    <div class="tabs" role="tablist" aria-label="Escolha a tela">
+      <button class="tab" role="tab" id="tab-colaborador" aria-controls="v-colaborador" aria-selected="true">Colaborador</button>
+      <button class="tab" role="tab" id="tab-rh" aria-controls="v-rh" aria-selected="false">RH</button>
+      <button class="tab" role="tab" id="tab-psicologo" aria-controls="v-psicologo" aria-selected="false">Psicólogo</button>
+    </div>
+    <a class="back" href="index.html">← Voltar ao site</a>
+  </div>
+</header>
+
+<!-- COLABORADOR -->
+<section class="screen" id="v-colaborador" role="tabpanel" aria-labelledby="tab-colaborador">
+  <div class="screen-in">
+    <div class="screen-head">
+      <div><h1>O que o colaborador vê no celular</h1><p>Responda como se fosse um funcionário da Empresa Exemplo. Nada sai deste navegador.</p></div>
+      <button class="btn ghost" id="c-reiniciar" type="button">Recomeçar</button>
+    </div>
+    <div class="collab">
+      <div class="device"><div class="device-screen" id="c-tela" aria-live="polite"></div></div>
+      <div class="side">
+        <ol class="flow" id="c-flow" aria-label="Etapas">
+          <li data-f="0">Convite e aceite</li>
+          <li data-f="1">Perguntas sobre o trabalho</li>
+          <li data-f="2">Como você está (opcional)</li>
+          <li data-f="3">Resultado</li>
+          <li data-f="4">Agendamento</li>
+        </ol>
+        <div class="side-card now" id="c-explica"></div>
+        <div class="side-card">
+          <h3>Para onde vai cada resposta</h3>
+          <ul>
+            <li><b>Perguntas sobre o trabalho:</b> entram na média do setor. O painel do RH só mostra setores com 5 ou mais respostas.</li>
+            <li><b>Como você está:</b> vai só para a psicóloga da Alentta. A empresa não recebe nem a soma por pessoa.</li>
+            <li><b>Agendamento:</b> o RH vê apenas que houve mais uma sessão marcada, sem nome.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RH -->
+<section class="screen" id="v-rh" role="tabpanel" aria-labelledby="tab-rh" hidden>
+  <div class="screen-in">
+    <div class="screen-head">
+      <div><h1>Empresa Exemplo Ltda · ciclo 2026</h1><p>214 colaboradores · 7 setores · questionário aberto de 03/11 a 17/11/2026</p></div>
+      <span class="pill info" style="font-size:.8125rem">Atualizado há 5 minutos</span>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><small>Participação</small><b>78%</b><span>167 de 214 responderam</span></div>
+      <div class="kpi"><small>Setores em risco alto</small><b style="color:var(--crit)">2</b><span>Atendimento e Logística</span></div>
+      <div class="kpi"><small>Plano de ação</small><b>4 de 9</b><span>ações concluídas no prazo</span></div>
+      <div class="kpi"><small>Sessões realizadas</small><b>41</b><span>17 pessoas atendidas, sem nomes</span></div>
+    </div>
+    <div class="grid-2">
+      <div class="panel">
+        <div class="panel-head">
+          <div><h2>Mapa de riscos psicossociais por setor</h2><p>0 a 100: quanto maior, maior o risco. Média das respostas do setor.</p></div>
+          <div class="legend"><span><i style="background:var(--good-soft);box-shadow:inset 0 0 0 1.5px var(--good)"></i>Baixo (até 39)</span><span><i style="background:var(--warn-soft);box-shadow:inset 0 0 0 1.5px var(--warn)"></i>Moderado (40 a 59)</span><span><i style="background:var(--crit-soft);box-shadow:inset 0 0 0 1.5px var(--crit)"></i>Alto (60 ou mais)</span></div>
+        </div>
+        <div class="scroll"><table class="t heatmap" id="rh-heat"></table></div>
+        <p style="font-size:.8438rem;color:var(--muted)">Diretoria tem 4 respostas: os números ficam ocultos e entram só no total da empresa.</p>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><div><h2>Cuidado</h2><p>Somente totais. Nomes nunca aparecem no painel.</p></div></div>
+        <div class="funnel" id="rh-funnel"></div>
+        <p style="font-size:.8438rem;color:var(--muted)">Tempo médio entre o convite e a primeira conversa: 2,1 dias. Casos de crise: atendidos no mesmo dia.</p>
+      </div>
+    </div>
+    <div class="grid-2">
+      <div class="panel">
+        <div class="panel-head"><div><h2>Plano de ação</h2><p>Entra no PGR. Cada ação tem responsável e prazo.</p></div><button class="mini-btn" type="button" data-toast="Na versão real, a nova ação abre um formulário com risco, setor, responsável e prazo.">Nova ação</button></div>
+        <div class="scroll"><table class="t" id="rh-plano"></table></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><div><h2>Documentos para a fiscalização</h2><p>Histórico guardado por 20 anos, como a NR-1 pede para o inventário.</p></div></div>
+        <div class="docs">
+          <div class="doc"><div><b>Relatório técnico psicossocial</b><br><span>Assinado por psicóloga CRP 03 · 28 páginas</span></div><button class="mini-btn" type="button" data-toast="Na versão real, baixa o PDF assinado digitalmente.">Baixar PDF</button></div>
+          <div class="doc"><div><b>Inventário de riscos</b><br><span>14 perigos · formato da NR-1 para o PGR</span></div><button class="mini-btn" type="button" data-toast="Na versão real, baixa a planilha no formato do inventário.">Baixar planilha</button></div>
+          <div class="doc"><div><b>Registro de participação dos trabalhadores</b><br><span>Convites, lembretes e adesão por setor</span></div><button class="mini-btn" type="button" data-toast="Na versão real, baixa o registro com datas e totais.">Baixar</button></div>
+          <div class="doc"><div><b>Encontro com as lideranças</b><br><span>Lista de presença · 12/11/2026</span></div><button class="mini-btn" type="button" data-toast="Na versão real, baixa a lista de presença.">Baixar</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PSICÓLOGO -->
+<section class="screen" id="v-psicologo" role="tabpanel" aria-labelledby="tab-psicologo" hidden>
+  <div class="screen-in">
+    <div class="screen-head">
+      <div><h1>Psic. Marina Lopes · CRP 03/00000 (exemplo)</h1><p>Quinta-feira, 14/11/2026 · 3 empresas atendidas</p></div>
+      <span class="pill good" style="font-size:.8125rem">Disponível</span>
+    </div>
+    <div class="psi">
+      <div class="panel">
+        <div class="panel-head"><div><h2>Fila de acolhimento</h2><p>Ordem por prioridade da triagem</p></div></div>
+        <div class="queue" id="p-fila"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><div><h2>Agenda de hoje</h2><p>Sessões de 50 minutos por vídeo</p></div></div>
+        <div class="agenda" id="p-agenda"></div>
+      </div>
+      <div class="panel prontuario">
+        <div class="panel-head"><div><h2 id="p-nome">Prontuário</h2><p id="p-sub"></p></div><button class="btn" type="button" style="min-height:42px" data-toast="Na versão real, abre a sala de vídeo da plataforma, a mesma da teleconsulta da Eloá.">Entrar na sala</button></div>
+        <div class="alertbox info" id="p-triagem"></div>
+        <label class="chart-field" for="p-queixa">Demanda trazida<textarea id="p-queixa"></textarea></label>
+        <label class="chart-field" for="p-evol">Evolução da sessão<textarea id="p-evol" placeholder="Registro da sessão de hoje"></textarea></label>
+        <label class="chart-field" for="p-conduta">Conduta e próximos passos<input id="p-conduta" placeholder="Ex.: 2ª sessão em 7 dias; técnica de respiração; rever com a pessoa a conversa com a liderança"></label>
+        <div class="row-btns">
+          <button class="btn" type="button" data-toast="Na versão real, o registro é assinado e fica imutável. Correções entram como adendo.">Assinar registro</button>
+          <button class="btn ghost" type="button" data-toast="Na versão real, gera a carta de encaminhamento para CAPS, UBS ou o plano de saúde.">Encaminhar à rede</button>
+          <button class="btn ghost" type="button" data-toast="Na versão real, sai só a data e o horário, sem sintomas, e vai para o próprio paciente, que decide se entrega à empresa.">Declaração de comparecimento</button>
+        </div>
+        <p class="lock"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" style="flex:none;margin-top:2px"><rect x="3" y="7" width="10" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 7V5a2.5 2.5 0 0 1 5 0v2" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><span>Prontuário de uso exclusivo da psicóloga, guardado por no mínimo 5 anos. A empresa contratante não tem acesso a nada desta tela.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<p class="toast" id="toast" role="status" hidden></p>
+<script src="js/demo.js"></script>
+</body>
+</html>
