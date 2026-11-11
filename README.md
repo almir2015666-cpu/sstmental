@@ -17,6 +17,15 @@ Uma empresa da **Eloá Group** (mesmo grupo da Eloá e da NutriObjetivo).
 
 Para ver: abrir `index.html` no navegador. Não tem build.
 
+## Fotos
+
+Fotos do Pexels (licença livre para uso comercial, sem atribuição obrigatória), otimizadas em `img/`:
+`equipe-sorrindo.jpg` (pexels 3860641), `psicologa-video.jpg` (6266980), `colaborador-celular.jpg` (7504898),
+`reuniao-equipe.jpg` (5945809). O Unsplash bloqueia download automático; por isso o Pexels.
+
+A página inicial usa `css/home.css`. A demonstração usa `css/site.css` + `css/demo.css`, com as mesmas cores.
+`index.html#tela-colaborador` e `#tela-psicologo` abrem a vitrine direto na aba.
+
 ## Regras que não mudam
 
 - O RH nunca vê resposta individual, nome de quem está em atendimento nem prontuário.
