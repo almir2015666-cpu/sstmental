@@ -1,4 +1,4 @@
-/* Demonstração da Alentta. Tudo roda no navegador, com dados de exemplo; nada é enviado. */
+/* Demonstração da SST Mental. Tudo roda no navegador, com dados de exemplo; nada é enviado. */
 (function () {
   'use strict';
 
@@ -112,7 +112,7 @@
 
     if (e === 0) {
       marcarFluxo(0);
-      tela.appendChild(el('p', { class: 'q-domain' }, 'Empresa Exemplo + Alentta'));
+      tela.appendChild(el('p', { class: 'q-domain' }, 'Empresa Exemplo + SST Mental'));
       tela.appendChild(el('h2', null, 'Queremos ouvir você sobre o seu trabalho'));
       tela.appendChild(el('p', { class: 'muted' }, 'São 10 perguntas rápidas. Não pedimos seu nome nem CPF. A empresa recebe só a soma das respostas do seu setor, e apenas se ele tiver 5 ou mais respostas.'));
       var lab = el('label', { for: 'c-setor', style: 'display:grid;gap:6px;font-weight:600;font-size:.9063rem' }, 'Seu setor');
@@ -175,11 +175,11 @@
       marcarFluxo(2);
       tela.appendChild(el('span', { class: 'q-domain' }, 'Parte opcional'));
       tela.appendChild(el('h2', null, 'Se quiser, conte como você está'));
-      tela.appendChild(el('p', { class: 'muted' }, 'São 5 perguntas. Essas respostas não vão para a empresa: só a psicóloga da Alentta vê, para oferecer uma conversa se for bom para você.'));
+      tela.appendChild(el('p', { class: 'muted' }, 'São 5 perguntas. Essas respostas não vão para a empresa: só a psicóloga da SST Mental vê, para oferecer uma conversa se for bom para você.'));
       var ck2 = el('label', { class: 'check', for: 'c-aceite-saude', style: 'padding:12px;border-radius:12px;background:var(--brand-soft)' });
       var inp2 = el('input', { type: 'checkbox', id: 'c-aceite-saude' });
       ck2.appendChild(inp2);
-      ck2.appendChild(el('span', null, '<b>Autorizo</b> a psicóloga da Alentta a ver estas respostas para me oferecer atendimento. A empresa não recebe nada delas.'));
+      ck2.appendChild(el('span', null, '<b>Autorizo</b> a psicóloga da SST Mental a ver estas respostas para me oferecer atendimento. A empresa não recebe nada delas.'));
       tela.appendChild(ck2);
       var rb2 = el('div', { class: 'row-btns' });
       var resp = botao('Responder', '', function () { st.etapa = 21; st.bemI = 0; desenhar(); }, true);
@@ -254,7 +254,7 @@
 
       if (crise) {
         var box = el('div', { class: 'alertbox crit' });
-        box.innerHTML = '<b>Você não precisa passar por isso sozinho(a).</b><span>Se estiver em perigo agora, ligue <b>188</b> (CVV, 24 horas, gratuito) ou <b>192</b> (SAMU).</span><span>Deixe um telefone e a psicóloga da Alentta liga para você ainda hoje. Só ela vê esse número.</span>';
+        box.innerHTML = '<b>Você não precisa passar por isso sozinho(a).</b><span>Se estiver em perigo agora, ligue <b>188</b> (CVV, 24 horas, gratuito) ou <b>192</b> (SAMU).</span><span>Deixe um telefone e a psicóloga da SST Mental liga para você ainda hoje. Só ela vê esse número.</span>';
         var tel = el('input', { id: 'c-tel', type: 'tel', inputmode: 'tel', placeholder: '(71) 9 0000-0000', style: 'min-height:46px;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:400 1rem var(--font-body)' });
         tel.setAttribute('aria-label', 'Telefone para a psicóloga ligar');
         box.appendChild(tel);
@@ -372,7 +372,7 @@
     var P = [
       ['Ritmo e volume', 'Atendimento', 'Rever dimensionamento: 2 vagas e escala nos picos de segunda-feira', 'Gerente de Operações', '15/12/2026', 'warn', 'Em andamento'],
       ['Jornada', 'Atendimento', 'Proibir mensagens de trabalho após 19h no grupo da equipe', 'RH', '20/11/2026', 'good', 'Concluída'],
-      ['Liderança', 'Logística', 'Formação de líderes em feedback e gestão de conflitos (8 h)', 'RH + Alentta', '31/01/2027', 'warn', 'Em andamento'],
+      ['Liderança', 'Logística', 'Formação de líderes em feedback e gestão de conflitos (8 h)', 'RH + SST Mental', '31/01/2027', 'warn', 'Em andamento'],
       ['Respeito', 'Logística', 'Divulgar o canal anônimo de denúncia e o fluxo de apuração', 'CIPA', '30/11/2026', 'good', 'Concluída'],
       ['Autonomia', 'Produção', 'Reunião quinzenal da equipe para decidir ajustes de processo', 'Supervisor de Produção', '10/01/2027', 'info', 'Não iniciada'],
       ['Ritmo e volume', 'Comercial', 'Rever metas do trimestre com participação do time', 'Diretoria Comercial', '05/11/2026', 'crit', 'Atrasada']

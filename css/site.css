@@ -1,4 +1,4 @@
-/* Alentta: saúde mental no trabalho (NR-1). Uma empresa da Eloá Group.
+/* SST Mental: saúde mental no trabalho (NR-1). Uma empresa da Eloá Group.
    Layout: faixas horizontais de ponta a ponta, alternando fundo claro, fundo tingido e uma faixa escura (sigilo);
    o produto aparece como tela real (painel do RH e celular), em linhas alternadas texto/tela; conteúdo até 1240px. */
 :root{
@@ -404,3 +404,6 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .group-wordmark small{font-size:12px;font-weight:700;letter-spacing:.26em;text-transform:uppercase}
 @media (max-width:860px){.footer-top{grid-template-columns:repeat(3,minmax(0,1fr))}.footer-top>:first-child{grid-column:1/-1}}
 @media (max-width:520px){.footer-top{grid-template-columns:1fr}}
+
+/* logo SST Mental: "Mental" mais leve */
+.wm-l{font-weight:500;margin-left:.16em}

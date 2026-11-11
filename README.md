@@ -1,4 +1,4 @@
-# Alentta
+# SST Mental
 
 Saúde mental no trabalho para empresas: avaliação de riscos psicossociais da NR-1,
 triagem individual confidencial, psicólogo por vídeo e painel do RH.
@@ -19,12 +19,13 @@ Para ver: abrir `index.html` no navegador. Não tem build.
 
 ## No ar
 
-- Endereço: https://almir2015666-cpu.github.io/alentta/ (GitHub Pages, repositório público `almir2015666-cpu/alentta`).
+- Endereço: https://almir2015666-cpu.github.io/sstmental/ (GitHub Pages, repositório público `almir2015666-cpu/sstmental`).
 - **Publicar = `git push`** no ramo `main`. O GitHub atualiza o site em 1 a 2 minutos.
 - Commits com o e-mail privado do GitHub (`...@users.noreply.github.com`), porque o repositório é público.
-- O site está **fora do Google** (`<meta name="robots" content="noindex">` no `index.html`) enquanto o nome e o domínio são provisórios. Tirar essa linha quando estiverem definidos.
+- O site está **fora do Google** (`<meta name="robots" content="noindex">` no `index.html`) até o domínio `sstmental.com.br` (livre em 11/11/2026) estar registrado e apontado para cá. Tirar essa linha nessa hora.
 - **Formulário de contato:** preencher `CONTATO` no começo do script do `index.html` (WhatsApp com DDI, por exemplo `5571999999999`, e/ou e-mail). Sem isso, ele avisa que ainda não envia.
-- Domínio próprio: quando houver, criar o arquivo `CNAME` com o domínio e apontar o DNS para o GitHub Pages.
+- Domínio próprio: registrar `sstmental.com.br` no registro.br, criar o arquivo `CNAME` com o domínio e apontar o DNS para o GitHub Pages.
+- Nome: **SST Mental** (escolhido em 11/11/2026; antes era o provisório "Alentta"). Logo = escudo (segurança do trabalho) com ψ (psicologia); "SST" em negrito e "Mental" em peso 500 (`.wm-l`).
 
 ## Fotos
 
