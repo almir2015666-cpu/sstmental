@@ -290,7 +290,7 @@
       marcarFluxo(4);
       tela.appendChild(el('span', { class: 'q-domain' }, 'Agendar conversa'));
       tela.appendChild(el('h2', null, 'Escolha um horário'));
-      tela.appendChild(el('p', { class: 'muted' }, 'Psic. Marina Lopes · 50 minutos por vídeo. Você recebe o link por WhatsApp e um lembrete 1 hora antes.'));
+      tela.appendChild(el('p', { class: 'muted' }, 'Psic. Marina Lopes · 30 minutos por vídeo. Você recebe o link por WhatsApp e um lembrete 1 hora antes.'));
       var lista = el('div', { class: 'opts' });
       HORARIOS.forEach(function (h) {
         var b = el('button', { class: 'slot' + (st.horario === h ? ' on' : ''), type: 'button' }, '<span>' + h + '</span><span class="pill good">Livre</span>');
