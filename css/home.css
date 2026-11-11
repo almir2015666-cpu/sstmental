@@ -1,7 +1,7 @@
 /* Alentta · página inicial. Uma empresa da Eloá Group.
    Direção: clínica, calma e confiante. Fundo branco, verde-azulado profundo como cor da marca,
    fotos reais de pessoas, telas do produto em alta fidelidade, pouco texto e muito espaço.
-   Títulos em Plus Jakarta Sans; uma ou duas palavras por título em Instrument Serif itálico; texto em Inter. */
+   Títulos em Plus Jakarta Sans, com a palavra de destaque só na cor da marca; texto em Inter. */
 :root{
   --bg:#FFFFFF;
   --bg-soft:#F4F8F8;
@@ -59,8 +59,9 @@
 html{scroll-behavior:smooth}
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
 body{margin:0;background:var(--bg);color:var(--text);font:400 1.0625rem/1.65 var(--f-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
-h1,h2,h3,h4{margin:0;color:var(--ink);font-family:var(--f-head);font-weight:650;letter-spacing:-.025em;line-height:1.12;text-wrap:balance}
-h1 em,h2 em{font-family:var(--f-serif);font-style:italic;font-weight:400;letter-spacing:-.01em;color:var(--brand)}
+h1,h2,h3,h4{margin:0;color:var(--ink);font-family:var(--f-head);font-weight:650;letter-spacing:-.015em;line-height:1.14;text-wrap:balance}
+/* Destaque no título: mesma letra e mesmo peso, só a cor muda (o dono não gostou do itálico serifado misturado). */
+h1 em,h2 em{font-style:normal;color:var(--brand)}
 p{margin:0}
 a{color:inherit}
 img{max-width:100%;display:block}
@@ -114,7 +115,7 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .hero-copy{display:grid;gap:26px;min-width:0}
 .badge{display:inline-flex;align-items:center;gap:10px;justify-self:start;padding:7px 14px 7px 8px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:.875rem;font-weight:600}
 .badge i{font-style:normal;background:var(--brand);color:var(--brand-ink);padding:3px 9px;border-radius:999px;font-size:.75rem;letter-spacing:.04em}
-.hero h1{font-size:clamp(2.6rem,5.6vw,4.4rem);letter-spacing:-.035em;line-height:1.04}
+.hero h1{font-size:clamp(2.6rem,5.6vw,4.4rem);letter-spacing:-.025em;line-height:1.06}
 .hero-sub{font-size:clamp(1.0625rem,1.5vw,1.2rem);color:var(--muted);max-width:52ch}
 .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
 .hero-proof{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:.9375rem;color:var(--muted);list-style:none;padding:0;margin:4px 0 0}
