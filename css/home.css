@@ -419,3 +419,82 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .group-wordmark small{font-size:12px;font-weight:700;letter-spacing:.26em;text-transform:uppercase}
 @media (max-width:860px){.footer-top{grid-template-columns:repeat(3,minmax(0,1fr))}.footer-top>:first-child{grid-column:1/-1}}
 @media (max-width:520px){.footer-top{grid-template-columns:1fr}}
+
+/* ======================================================================
+   MAIS COR (11/11/2026): o dono achou o site "muito branco".
+   Abertura e normas em verde-azulado escuro, seções alternando branco e menta,
+   rodapé escuro, âmbar em pequenos detalhes. Fica no fim para sobrepor as regras acima.
+   ====================================================================== */
+:root{--mint:#E7F2F0;--mint-2:#D5EAE6;--deep:#0A3540;--deep-2:#0E4F5C;--amber:#E3A13B}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--mint:#0F2B33;--mint-2:#143640;--deep:#04161C;--deep-2:#0A2B33}}
+:root[data-theme="dark"]{--mint:#0F2B33;--mint-2:#143640;--deep:#04161C;--deep-2:#0A2B33}
+
+.sec.mint{background:var(--mint)}
+.sec.soft{background:linear-gradient(180deg,var(--bg-soft),var(--mint))}
+
+/* topo: escuro sobre a abertura, claro depois de rolar */
+body::before{background:var(--deep)}
+.nav{background:var(--deep);transition:background .25s,border-color .25s}
+.nav:not(.scrolled){--brand:#FFFFFF;--brand-ink:#0A3540;--brand-strong:#E7F2F0;--ink:#FFFFFF;--line:rgba(255,255,255,.18);--bg:#0A3540}
+.nav:not(.scrolled) .nav-links a{color:#CFE3E6}
+.nav:not(.scrolled) .nav-links a:hover{color:#fff}
+.nav.scrolled{background:color-mix(in srgb,#FFFFFF 92%,transparent)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .nav.scrolled{background:color-mix(in srgb,#081A21 92%,transparent)}}
+:root[data-theme="dark"] .nav.scrolled{background:color-mix(in srgb,#081A21 92%,transparent)}
+
+/* abertura */
+.hero{color:#C9DEE2;background:
+  radial-gradient(900px 520px at 88% 8%,rgba(127,208,211,.22),transparent 62%),
+  radial-gradient(640px 420px at -5% 105%,rgba(227,161,59,.14),transparent 60%),
+  linear-gradient(165deg,var(--deep) 0%,var(--deep-2) 100%)}
+.hero h1{color:#FFFFFF}
+.hero h1 em{color:#8EDBDC}
+.hero-sub{color:#BCD5DA}
+.hero .badge{background:rgba(255,255,255,.1);color:#D3ECEE}
+.hero .badge i{background:var(--amber);color:#2A1A04}
+.hero .btn{background:#FFFFFF;border-color:#FFFFFF;color:#0B2530}
+.hero .btn:hover{background:var(--mint);border-color:var(--mint)}
+.hero .btn.line{background:transparent;border-color:rgba(255,255,255,.4);color:#FFFFFF}
+.hero .btn.line:hover{border-color:#FFFFFF}
+.hero-proof{color:#BCD5DA}
+.hero-proof .ico{color:#8EDBDC}
+.hero-photo{box-shadow:0 40px 80px -30px rgba(0,0,0,.55)}
+
+/* faixa das normas, continuando a abertura */
+.norms{background:#08303A;border:0}
+.norms p{color:#9FC3C8}
+.norms li{color:#FFFFFF}
+.norms li span{color:#9FC3C8}
+
+/* três frentes em cartões menta, ícone sólido */
+.pillar{background:var(--mint);border-radius:24px;padding:30px 28px}
+.pillar-ico{background:var(--brand);color:var(--brand-ink)}
+
+/* vitrine com mais cor */
+.stage{background:linear-gradient(155deg,var(--mint-2),var(--bg-soft));border-color:transparent}
+.tab[aria-selected="true"]{background:var(--brand);border-color:var(--brand)}
+.tab[aria-selected="true"] b{color:var(--brand-ink)}
+.tab[aria-selected="true"] span,.tab[aria-selected="true"] li{color:color-mix(in srgb,var(--brand-ink) 82%,transparent)}
+.tab[aria-selected="true"] li .ico{color:#8EDBDC}
+
+/* ícones sobre menta ficam em branco para não sumir */
+.sec.mint .vi{background:var(--card)}
+.sec.mint .label,.sec.soft .label{color:var(--brand)}
+
+/* números e etapas com um toque de âmbar */
+.steps li::after{background:var(--amber)}
+.stat{border-top-color:var(--brand)}
+.promise div{background:var(--mint)}
+
+/* rodapé escuro */
+.footer{background:var(--deep);color:#9FBBC1}
+.footer h4{color:#FFFFFF}
+.footer a:hover{color:#FFFFFF}
+.footer .brand{color:#FFFFFF;--brand:#FFFFFF;--brand-ink:#0A3540}
+.help{background:rgba(255,255,255,.07);color:#C9DEE2}
+.help b{color:#FFFFFF}
+.help .ico{color:#8EDBDC}
+.footer-bottom{border-top-color:rgba(255,255,255,.14)}
+.group-sign{color:#FFFFFF}
+.group-label{color:#9FBBC1}
+.group-sep{background:rgba(255,255,255,.3)}
